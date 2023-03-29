@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfumaria | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        .imagem {
+            width: 180px;
+        }
+
+        .alinhar {
+            display: block;
+            align-items: center;
+        }
+        .fundo{
+            background-color: rgb(235, 235, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0 overflow-x-hidden">
+        
+        <!-- Logotipo -->
+        <div class="row mb-0">
+            <div class="col">
+                <img src="imagens/logo.png" class="img-fluid p-3 imagem" alt="">
+            </div>
+        </div>
+        <!-- menu de navegação -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid border-secondary-subtle border-top p-1">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Perfumes
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Parfum</a></li>
+                                        <li><a class="dropdown-item" href="#">Eau de Toilette</a></li>
+                                        <li><a class="dropdown-item" href="#">Eau de Cologne</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Corpo e Banho
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Hidratantes Corporais</a></li>
+                                        <li><a class="dropdown-item" href="#">Óleos Corporais</a></li>
+                                        <li><a class="dropdown-item" href="#">Sais de Banho</a></li>
+                                        <li><a class="dropdown-item" href="#">Sabonetes Liquidos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Linha Ambiente
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Aromatizador de ambiente</a></li>
+                                        <li><a class="dropdown-item" href="#">Aromaterápicos</a></li>
+                                        <li><a class="dropdown-item" href="#">Serum Capilar</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Promoções
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Óleos Essenciais</a></li>
+                                        <li><a class="dropdown-item" href="#">Colônias</a></li>
+                                        <li><a class="dropdown-item" href="#">Água de Banho</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/carous.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Icones -->
+        <div class="row">
+            <div class="col fundo">
+                <div class="container mt-3 p-3 ">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="bi bi-percent fs-2"></i>
+                                </div>
+                                <div class="col-10 mx-auto">
+                                    <b>Frete Grátis</b><br>
+                                    nas compras a partir de R$400,00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="bi bi-credit-card fs-2"></i>
+
+                                </div>
+                                <div class="col-10 mx-auto">
+                                    <b>Pague no Cartão</b><br>
+                                    parcelado em até 12x sem juros
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="bi bi-shield-check fs-2"></i>
+                                </div>
+                                <div class="col-10 mx-auto">
+                                    <b>Site seguro</b><br>
+                                    blindado com Certificado SSL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="bi bi-clock-history fs-2"></i>
+                                </div>
+                                <div class="col-10 mx-auto">
+                                    <b>Prazo de Entrega</b><br>
+                                    Envio em até 5 dias úteis +<br>
+                                    Prazo do transportador
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lançamento -->
+        <div class="row">
+            <div class="col mt-5 pb-3 d-flex justify-content-center">
+                <h2>Últimos lançamentos</h2>
+            </div>
+        </div>
+
+        <!-- Produtos -->
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mt-3 mb-5">
+                    <div class="card border border-0 border-bottom border-secondary-subtle">
+                        <img src="imagens/ess.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center">Perfume Essencial Tradicional Masculino - 100ml</p>
+                            <p class="card-text text-center"><b>R$194,90</b><br>
+                                <b>7</b>x de <b>R$27,84</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mt-3">
+                    <div class="card border border-0 border-bottom border-secondary-subtle">
+                        <img src="imagens/dior.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center">Sauvage Dior Eau de Parfum Masculino - 100ml</p>
+                            <p class="card-text text-center"><b>R$526,00</b><br>
+                                <b>12</b>x de <b>R$52,70</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mt-3">
+                    <div class="card border border-0 border-bottom border-secondary-subtle">
+                        <img src="imagens/ferrari.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center">Ferrari Scuderia Black Eau De Toilette Spray - 100 ml</p>
+                            <p class="card-text text-center"><b>R$178,99</b><br>
+                                <b>3</b>x de <b>R$59,66</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 mt-3 w-25">
+                    <div class="card border border-0 border-bottom border-secondary-subtle">
+                        <img src="imagens/chanel.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-center">Chanel Bleu de Chanel Eau De Parfum Vaporizador - 100ml</p>
+                            <p class="card-text text-center"><b>R$811,65</b><br>
+                                <b>6</b>x de <b>R$135,27</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quem somos -->
+        <div class="container-fluid mt-5 p-5 fundo d-flex justify-content-between">
+            <div class="row">
+                <div class="col">
+                    <h4>Quem somos</h4>
+
+                    <p class="me-4">A Lorem Ipsum Cosméticos é uma empresa brasileira fundada em 2011 com o objetivo de atuar como
+                        perfumaria de acesso e promover o mercado com produtos de qualidade internacional e preço justo.
+                        Fazemos perfumaria com ciência, amor e arte, assim combinamos notas aromáticas para criar
+                        acordes inesquecíveis que são verdadeiras sinfonias de sentidos.</p>
+                </div>
+            </div>
+
+            <!-- Categorias -->
+            <div class="col-4">
+                <h3 class="text-black mb-4">Categorias</h3>
+                <ul class="list-group">
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Perfumes
+                            Masculinos</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Perfumes
+                            Femininos</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Hidratantes</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Desodorantes</a>
+                    </li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Para sua casa</a>
+                    </li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black">Promoções</a></li>
+                </ul>
+            </div>
+
+            <!-- Institucional -->
+            <div class="col-4">
+                <h3 class="text-black mb-4">Institucional</h3>
+                <ul class="list-group">
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Quem Somos</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Sobre Perfumes</a>
+                    </li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Dicas do
+                            Perfumista</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Políticas de
+                            Privacidade</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Entregas</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black mb-3">Pagamentos</a></li>
+                    <li class="list-group"><a href="#" class="text-decoration-none text-black ">Trocas e Devoluções</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="row">
+            <div class="col p-1 bg-dark text-light text-center">
+                &copy; - Copyright Lorem Ipsum Cosméticos-2032. Todos os direitos reservados.
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
